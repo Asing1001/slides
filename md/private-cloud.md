@@ -1,4 +1,4 @@
-![alt text](../img/private-cloud/private-cloud-blue.png "Img Title Text")
+![alt text](../img/private-cloud/private-cloud.png "Img Title Text")
 
 ---
 
@@ -44,7 +44,6 @@ Note:
   - Apply new server required effort for finding last apply info and reinstall every software and settings
   - Although VM image template could achieve the same goal, MIS is unable to maintain all BU's image. By using private cloud IT could maintain their own image in version control
 
-
 ---
 
 ## Phases
@@ -66,6 +65,15 @@ Note:
 ---
 
 ![alt text](../img/private-cloud/openshift.jpg "Logo Title Text 1")
+
+---
+
+## Expected outcome
+
+1. Cost of server reduce 20%
+2. Time of applying resource reduce 90%
+3. Time of checking application/server reduce 80%
+4. Duplicate same environment in 10 minutes
 
 ---
 
