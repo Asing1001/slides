@@ -1,6 +1,4 @@
-# Private Cloud
-
-Be smart
+![alt text](../img/private-cloud/private-cloud-blue.png "Img Title Text")
 
 ---
 
@@ -24,10 +22,16 @@ Note:
 
 Unable to monitor all Server/Application
 
+![alt text](../img/private-cloud/current-monitor.jpg "Logo Title Text 1")
+
 Note:
 
 - Unable to know Server/Application status 
   - e.g. After QAT deployment required one by one manually check
+
+===
+
+![alt text](../img/private-cloud/jenkins.jpg "Logo Title Text 1")
 
 ---
 
@@ -75,8 +79,4 @@ Note:
 
 ---
 
-## Q & A
-
----
-
-## Thank you
+# Thank you
