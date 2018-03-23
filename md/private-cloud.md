@@ -48,19 +48,26 @@ Note:
 
 ## Phases
 
-1. Build a private cloud for experimental side projects (POC)
+1. Build a mini private cloud
     - ETA : 3 weeks
-    - Require resource : 2 linux + 2 windows machine
+    - Require resource : 2 linux VM, 2 windows VM, Books, Courses
 
-1. Integrate docker into private cloud, migrate some QAT modules
+1. Shift small modules into private cloud
+    - ETA : 1 week
+
+1. Shift one team's QAT environment into private cloud
     - ETA : 1 month
-    - Resolve Issue : Unable to know Server/Application status,  Slow for applying resource and adjust settings
+    - Resolve Issue : Unable to know Server/Application status, Slow for applying resource and adjust settings
+    - Require resource : Transfer team's QAT server resources into private cloud
+
+1. Build CI/CD environment in private cloud with docker integration
+    - ETA : 1 month
+    - Resolve Issue : Difficult to build new environment
     - Require resource : Docker resource
 
-1. Enhance private cloud to team's QAT level
-    - ETA : 2 weeks
-    - Resolve Issue : Difficult to build new environment
-    - Require resource : Transfer team's QAT resources into private cloud
+1. Share experience to entire company, help teams shift QAT environment
+    - ETA : 1 month
+    - Require resource : Member from each team
 
 ---
 
@@ -72,7 +79,7 @@ Note:
 
 1. Cost of server reduce 20%
 2. Time of applying resource reduce 90%
-3. Time of checking application/server reduce 80%
+3. Time of checking application/server reduce 90%
 4. Duplicate same environment in 10 minutes
 
 ---
