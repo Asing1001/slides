@@ -7,6 +7,7 @@
 1. Apply resource too slow
 1. Unable to monitor all Server/Application
 1. Can not build new environment from template
+1. Application Influence each other
 
 ---
 
@@ -55,13 +56,15 @@ Note:
 1. Shift small modules into private cloud
     - ETA : 1 week
 
+===
+
 1. Shift one team's QAT environment into private cloud
-    - ETA : 1 month
+    - ETA : 3 weeks
     - Resolve Issue : Unable to know Server/Application status, Slow for applying resource and adjust settings
     - Require resource : Transfer team's QAT server resources into private cloud
 
 1. Build CI/CD environment in private cloud with docker integration
-    - ETA : 1 month
+    - ETA : 2 month
     - Resolve Issue : Difficult to build new environment
     - Require resource : Docker resource
 
