@@ -9,7 +9,7 @@ Hi i'm note, please press `s` to see note
 
 ## Agenda
 
-* NodeJS feature
+* NodeJS Feature
 * NodeJS Module
 * Cluster
 * NPM
@@ -34,11 +34,11 @@ Base on CommonJS module system
 
 ### Require type
 
-* Directly module require e.g. `require('express')` 
-    Will first check `built-in module`, then `node_modules` and `../node_modules` and `../../node_modules` until root folder.
-* Path specific require `require('./my-module')` 
-    Using when not `npm nodule` or `built-in module`
-    
+* Directly module require, e.g. *require('express')*
+    * It will first check *built-in module*, then *node_modules* and *../node_modules* and *../../node_modules* until root folder.
+* Path specific require, e.g. *require('./my-module')*
+    * Using when not *npm nodule* or *built-in module*
+
 ===
 
 ### Require order
@@ -52,7 +52,7 @@ Base on CommonJS module system
 
 ### Require suffix
 
-`require()` will automatically add `.js` `.json` `.node` suffix, it is suggested to add `.json` `.node` suffix so it would be found faster.
+`require()` will automatically add `.js`, `.json`, `.node` suffix, it is suggested to add `.json` , `.node` suffix so it could be found faster.
 
 ---
 
