@@ -9,7 +9,7 @@ Hi i'm note, please press `s` to see note
 
 ## Agenda
 
-* Overview
+* NodeJS feature
 * NodeJS Module
 * Cluster
 * NPM
@@ -17,37 +17,53 @@ Hi i'm note, please press `s` to see note
 
 ---
 
-## Feature
+## Nodejs Feature
 
-* JavaScript runtime
-* Built on top of Chrome's V8 JS engine
+* A JavaScript runtime
+* Built on Chrome's V8 JS engine
 * Single thread, event-driven, non-blocking I/O
-* Node.js package ecosystem, NPM
+* Biggest package ecosystem, NPM
 
 ---
 
 ## NodeJS Module
 
-CommonJS - Require
+Base on CommonJS module system
 
-1. Cache
-2. Core module
-3. Relative path (. or ..)
-4. Absolute path (/)
-5. node_modules
+### Require type
+
+* Directly module require e.g. `require('express')` will first check `built-in module`, then `node_modules` and `../node_modules` and `../../node_modules` until root folder.
+* Path specific require `require('./my-module')` is using when it is not `npm nodule` or `built-in module`
+    
+===
+
+### Require order
+
+1. Cache (Module will be stored in cache when first time require)
+2. Built-in module
+3. Current folder
+4. Parent folder until root
+
+===
+
+### Require suffix
+
+`require()` will automatically add `.js` `.json` `.node` suffix, it is suggested to add `.json` `.node` suffix so it would be found faster.
 
 ---
 
 ## Cluster
 
-* Use multi-cpu to optimize performance
-* Multi-process
-* Master-child communication by [IPC](https://en.wikipedia.org/wiki/Inter-process_communication)
+* Multi-CPU => Multi-process to optimize performance
+* Will not crash when one process crashed
+* Master-child process communicate by [IPC](https://en.wikipedia.org/wiki/Inter-process_communication)
 * [cluster.js demo](https://github.com/Asing1001/hello-node/blob/master/cluster.js)
 
 ---
 
 ## Event loop
+
+The concept of Javascript excution order
 
 * [Event loop](http://latentflip.com/loupe/)
 
@@ -55,7 +71,7 @@ CommonJS - Require
 
 ## ExpressJS
 
-* Middleware
+* Flow control by Middleware
 * [firstExpress.js demo](https://github.com/Asing1001/hello-node/blob/master/firstExpress.js)
 * http://expressjs.com/zh-tw/
 
