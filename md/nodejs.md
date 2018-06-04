@@ -30,10 +30,14 @@ Hi i'm note, please press `s` to see note
 
 Base on CommonJS module system
 
+===
+
 ### Require type
 
-* Directly module require e.g. `require('express')` will first check `built-in module`, then `node_modules` and `../node_modules` and `../../node_modules` until root folder.
-* Path specific require `require('./my-module')` is using when it is not `npm nodule` or `built-in module`
+* Directly module require e.g. `require('express')` 
+    Will first check `built-in module`, then `node_modules` and `../node_modules` and `../../node_modules` until root folder.
+* Path specific require `require('./my-module')` 
+    Using when not `npm nodule` or `built-in module`
     
 ===
 
@@ -63,9 +67,7 @@ Base on CommonJS module system
 
 ## Event loop
 
-The concept of Javascript excution order
-
-* [Event loop](http://latentflip.com/loupe/)
+* [The concept of Javascript excution order - Event loop](http://latentflip.com/loupe/)
 
 ---
 
