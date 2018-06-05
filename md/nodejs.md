@@ -32,7 +32,7 @@ Base on CommonJS module system
 
 ===
 
-### Require type
+### Module Require type
 
 * Directly module require, e.g. *require('express')*
     * It will first check *built-in module*, then *node_modules* and *../node_modules* and *../../node_modules* until root folder.
@@ -41,7 +41,7 @@ Base on CommonJS module system
 
 ===
 
-### Require order
+### Module Require order
 
 1. Cache (Module will be stored in cache when first time require)
 2. Built-in module
@@ -50,7 +50,7 @@ Base on CommonJS module system
 
 ===
 
-### Require suffix
+### Module Require suffix
 
 `require()` will automatically add `.js`, `.json`, `.node` suffix, it is suggested to add `.json` , `.node` suffix so it could be found faster.
 
