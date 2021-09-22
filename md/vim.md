@@ -471,22 +471,18 @@ q:
 
 ---
 
-### vimrc
+## vim X IDE
 
-`"` is the comment symbol in .vimrc, could only be placed at the start of line
+---
 
-```vi
-"Enable copy paste from system clibboard
-set clipboard^=unnamed,unnamedplus
+### Setup
 
-"Show differt cursor in different mode
-let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+- Ideavim
+  1. click the `V` icon on the right bottom corner
+  2. open `~/.ideavimrc`
+  3. edit and save
 
-"Show relative line number
-set rnu
-```
+- [VScode](https://github.com/Asing1001/tennis-kata#setup-vscode-configs)
 
 ---
 
