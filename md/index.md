@@ -1,3 +1,5 @@
+* [vim](html/vim.html)
+* [kubernetes pods](html/kube-pods.html)
 * [SEO](html/seo.html)
 * [ELK Monitor](html/elk-monitor.html)
 * [SASS](html/sass.html)
