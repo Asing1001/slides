@@ -1,8 +1,10 @@
 # Sing's Slides
 
-Using [reveal.js](https://github.com/hakimel/reveal.js) to make my slides.
+See the slides under https://www.paddingleft.com/slides/
 
 ## Reveal.js ShortCuts
+
+Powered by [reveal.js](https://github.com/hakimel/reveal.js) to make my slides.
 
 - <kbd>N</kbd>, <kbd>SPACE</kbd>:	Next slide
 - <kbd>P</kbd>: Previous slide
