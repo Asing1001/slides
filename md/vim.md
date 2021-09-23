@@ -253,7 +253,7 @@ tennis.firstPlayerScore();
 - insert line before/after the current line
   - o, O
 - join two line (keep mode)
-  - j
+  - J
 
 ---
 
@@ -317,7 +317,9 @@ tennis.firstPlayerScore();
 - S
   - Substitube the line
 - r
-  - replace
+  - replace a char
+- R
+  - Enter the insert-replace mode
 
 ---
 
@@ -339,7 +341,7 @@ tennis.firstPlayerScore();
 1. gg
 2. find `Miki`
 3. change to `Mery`
-4. repate all of them
+4. repeat all of them
 
 ===
 
@@ -348,7 +350,7 @@ tennis.firstPlayerScore();
 1. G
 2. find `second`
 3. change to `third`
-4. repate all of them
+4. repeat all of them
 
 ===
 
@@ -429,7 +431,7 @@ vi]p
 - Use the register in the `Search` and `Command mode`
   - `ctrl` + `r` + `<register>`
 
-> `*:/s/<ctrl+r>//abc/gc` to replace the lastest search keyword(*) to `abc` with confirmation dialog
+> `*:%s/<ctrl+r>//abc/gc` to replace the lastest search keyword(*) to `abc` with confirmation dialog
 
 ---
 
