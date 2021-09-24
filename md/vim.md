@@ -1,8 +1,34 @@
-# Vim
+# Vim X IDE
 
 ---
 
-## Mode
+## IDE Setup
+
+---
+
+### JetBrains IDE + vim
+
+- Install [ideavim](https://plugins.jetbrains.com/plugin/164-ideavim)
+  - Custom setting
+    1. Click `V` icon on the right bottom corner
+    2. Open and edit `~/.ideavimrc`
+- Tennis Kata demo - `Dart` + `Android Studio`
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rev_gQ_FTaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+### VScode + Vim
+
+- Install [vscodevim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [Setup instruction](https://github.com/Asing1001/tennis-kata#setup-vscode-configs)
+- Tennis Kata demo - `Vscode` + `Javascript`
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6lEIFl30JEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+## Vim Modes
 
 - insert
 - normal
@@ -14,11 +40,11 @@
 ### Insert mode
 
 - i
-  - insert before the char
+  - insert before the cursor
 - I
   - insert before the start of line
 - a
-  - append after the char
+  - append after the cursor
 - A
   - append at the end of line
 
@@ -363,7 +389,7 @@ tennis.firstPlayerScore();
 
 ===
 
-### in / around
+### inside / around
 
 ```bash
 # edit neariest word inside symbol, e.g. }
@@ -402,9 +428,9 @@ vi]p
 
 - `m` + `a~z`
   - bookmark current location to `a~z`
-- ` + `a~z`
+- `'` + `a~z`
   - go to a~z bookmark
-- \``
+- `''`
   - go to the last position
 
 ---
@@ -473,29 +499,6 @@ q:
 
 ---
 
-## vim X IDE
-
----
-
-### Setup
-
-- Ideavim
-  1. click the `V` icon on the right bottom corner
-  2. open `~/.ideavimrc`
-  3. edit and save
-
-- [VScode](https://github.com/Asing1001/tennis-kata#setup-vscode-configs)
-
----
-
-### Reference
-
-- [vim doc](http://vimdoc.sourceforge.net/htmldoc/motion.html)
-- [vim register](https://www.brianstorti.com/vim-registers/)
-- [vim cheatsheet](https://vim.rtorr.com/)
-
----
-
 ### More...and more
 
 - ctrl+o
@@ -506,3 +509,24 @@ q:
   - previous Change position
 - g,
   - next Change position
+
+---
+
+## Reference
+
+- [vim doc](http://vimdoc.sourceforge.net/htmldoc/motion.html)
+- [vim register](https://www.brianstorti.com/vim-registers/)
+- [vim cheatsheet](https://vim.rtorr.com/)
+
+---
+
+### Get the difference before saving in vim
+
+```bash
+:w !diff % -
+```
+
+- `w` without filename will output to stdin
+- `!` will excute bash in vim
+- `%` is current file in vim
+- `diff` with `-` will read content from stdin
